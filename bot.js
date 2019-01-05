@@ -572,8 +572,17 @@ client.on('message', message => {
 
 
 
-
-
+client.on('message', message => { 
+if (message.content.startsWith("^banme")) {
+if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply("**You Don't Have ` BAN_MEMBERS ` Permission**");
+  if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
+  let user = message.mentions.users.first();
+  if (!message.guild.member(user)
+  .bannable) return message.reply(`This User Is Have High Role !`);
+  message.guild.member(user).ban(7, user);
+    })
+}
+});
 
 
 
