@@ -13,7 +13,7 @@ const fs = require('fs');
 const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
 const devs = ["521763526436585472"]
-const developers = ["531059183282421800"]
+const developers = ["521763526436585472"]
 var prefix = "^";
 var adminprefix = '^'
 
