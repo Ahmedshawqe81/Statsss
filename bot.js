@@ -16,6 +16,10 @@ client.on('ready', () => {
 
 
 
+client.on("message", message => {
+if (message.content.startsWith('!creater')){
+message.guild.createRole({name : "Rainbow .", color : "RANDOM"}).then(r => {// Toxic Codes
+});
 
 
 
