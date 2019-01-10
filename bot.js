@@ -8,8 +8,8 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
- client.guilds.get("530707459442999296") 
- console.log('got the guild')
+ client.role.get('name' , 'TOP') 
+ console.log('got the Role')
 
 });
 
