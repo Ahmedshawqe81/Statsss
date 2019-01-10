@@ -8,11 +8,8 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
-  roles.find('name', 'TOP')
-  set.color('Random')
-
-});
-
+ client.guilds.get("530707459442999296") then
+ console.log('got the guild')
 
 
 
