@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
- client.guilds.get("530707459442999296") then
+ client.guilds.get("530707459442999296") 
  console.log('got the guild')
 
 });
