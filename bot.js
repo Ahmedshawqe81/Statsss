@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
- client.role.get('name' , 'TOP') 
+ client.role.find('name' , 'TOP') 
  console.log('got the Role')
 
 });
