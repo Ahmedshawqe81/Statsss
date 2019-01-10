@@ -7,7 +7,9 @@ client.on('ready', () => {
 
 
 
-
+client.on('ready', () => {
+  roles.find('name', 'TOP')
+  set.color('Random')
 
 
 
